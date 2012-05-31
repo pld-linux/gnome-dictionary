@@ -2,7 +2,7 @@ Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
 Version:	3.4.0
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL v2
 Group:		X11/Applications
@@ -28,10 +28,10 @@ Requires:	glib2 >= 1:2.28.0
 Requires:	gtk+3 >= 3.0.3
 Requires:	libgdict = %{epoch}:%{version}-%{release}
 Provides:	gnome-utils-dict
-Provides:	gnome-utils-dictionary = %{version}-%{release}
+Provides:	gnome-utils-dictionary = %{epoch}:%{version}-%{release}
 Obsoletes:	gnome-dict
 Obsoletes:	gnome-utils-dict
-Obsoletes:	gnome-utils-dictionary < 3.3.2-1
+Obsoletes:	gnome-utils-dictionary < 1:3.3.2-1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
