@@ -1,19 +1,19 @@
 Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
-Version:	3.4.0
-Release:	3
+Version:	3.9.0
+Release:	1
 Epoch:		1
 License:	GPL v2
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.4/%{name}-%{version}.tar.xz
-# Source0-md5:	27ac37e17d8139ae185181a7ba728bd9
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.9/%{name}-%{version}.tar.xz
+# Source0-md5:	4a82e6d7f3d2bfd65056bae87ca9d5f6
 URL:		http://live.gnome.org/GnomeUtils
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	gettext-devel >= 0.17
 BuildRequires:	glib2-devel >= 1:2.28.0
-BuildRequires:	gnome-doc-utils
+BuildRequires:	yelp-tools
 BuildRequires:	gtk+3-devel >= 3.0.3
 BuildRequires:	gtk-doc >= 1.15
 BuildRequires:	intltool >= 0.40.0
@@ -97,6 +97,7 @@ Dokumentacja API libgdict.
 %setup -q
 
 %build
+mkdir m4
 %{__intltoolize}
 %{__aclocal} -I m4
 %{__autoheader}
