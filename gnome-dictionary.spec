@@ -11,7 +11,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.9/%{name}-%{v
 URL:		http://live.gnome.org/GnomeUtils
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
-BuildRequires:	gettext-devel >= 0.17
+BuildRequires:	gettext-tools >= 0.17
 BuildRequires:	glib2-devel >= 1:2.28.0
 BuildRequires:	yelp-tools
 BuildRequires:	gtk+3-devel >= 3.0.3
