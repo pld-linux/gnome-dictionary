@@ -5,13 +5,13 @@
 Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
-Version:	3.16.2
+Version:	3.18.0
 Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.16/%{name}-%{version}.tar.xz
-# Source0-md5:	de8477a04c04855cf73863c4ee418507
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.18/%{name}-%{version}.tar.xz
+# Source0-md5:	42bd9e7e222d590412babaa55c419378
 URL:		https://wiki.gnome.org/Apps/Dictionary
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.14
@@ -151,7 +151,7 @@ rm -rf $RPM_BUILD_ROOT
 %files -n libgdict
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libgdict-1.0.so.*.*.*
-%attr(755,root,root) %ghost %{_libdir}/libgdict-1.0.so.8
+%attr(755,root,root) %ghost %{_libdir}/libgdict-1.0.so.9
 %{_libdir}/girepository-1.0/Gdict-1.0.typelib
 %{_datadir}/gdict-1.0
 
