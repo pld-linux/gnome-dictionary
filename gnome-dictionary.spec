@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	static_libs	# static library
-#
+
 Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
 Version:	3.18.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications
@@ -92,6 +92,9 @@ Summary:	libgdict API documentation
 Summary(pl.UTF-8):	Dokumentacja API libgdict
 Group:		Documentation
 Requires:	gtk-doc-common
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n libgdict-apidocs
 libgdict API documentation.
