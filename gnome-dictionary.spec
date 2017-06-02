@@ -5,20 +5,20 @@
 Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
-Version:	3.18.1
-Release:	2
+Version:	3.24.0
+Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.18/%{name}-%{version}.tar.xz
-# Source0-md5:	3e133b6c2aa521ff5fa2fdcb23ee223f
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.24/%{name}-%{version}.tar.xz
+# Source0-md5:	0d1c46b291bbacd6c96570ab88df4694
 URL:		https://wiki.gnome.org/Apps/Dictionary
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.14
 BuildRequires:	gettext-tools >= 0.17
-BuildRequires:	glib2-devel >= 1:2.40.0
+BuildRequires:	glib2-devel >= 1:2.42.0
 BuildRequires:	gobject-introspection-devel >= 1.42.0
-BuildRequires:	gtk+3-devel >= 3.14
+BuildRequires:	gtk+3-devel >= 3.22
 BuildRequires:	gtk-doc >= 1.15
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	libtool >= 2:2.2.6
@@ -28,7 +28,7 @@ BuildRequires:	rpmbuild(macros) >= 1.592
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	yelp-tools
-Requires(post,postun):	glib2 >= 1:2.40.0
+Requires(post,postun):	glib2 >= 1:2.42.0
 Requires:	libgdict = %{epoch}:%{version}-%{release}
 Provides:	gnome-utils-dict
 Provides:	gnome-utils-dictionary = %{epoch}:%{version}-%{release}
@@ -50,8 +50,8 @@ Summary:	libgdict library
 Summary(pl.UTF-8):	Biblioteka libgdict
 License:	LGPL v2+
 Group:		X11/Libraries
-Requires:	glib2 >= 1:2.40.0
-Requires:	gtk+3 >= 3.14
+Requires:	glib2 >= 1:2.42.0
+Requires:	gtk+3 >= 3.22
 
 %description -n libgdict
 libgdict library.
@@ -64,8 +64,8 @@ Summary:	Header files for libgdict library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libgdict
 License:	LGPL v2+
 Group:		X11/Development/Libraries
-Requires:	glib2-devel >= 1:2.40.0
-Requires:	gtk+3-devel >= 3.14
+Requires:	glib2-devel >= 1:2.42.0
+Requires:	gtk+3-devel >= 3.22
 Requires:	libgdict = %{epoch}:%{version}-%{release}
 
 %description -n libgdict-devel
