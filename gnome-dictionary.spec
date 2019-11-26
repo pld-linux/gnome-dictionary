@@ -5,13 +5,13 @@
 Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
-Version:	3.24.0
+Version:	3.24.1
 Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.24/%{name}-%{version}.tar.xz
-# Source0-md5:	0d1c46b291bbacd6c96570ab88df4694
+# Source0-md5:	dae37a5ac615e223bd2fe6a4adf04423
 URL:		https://wiki.gnome.org/Apps/Dictionary
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.14
