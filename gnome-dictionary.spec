@@ -2,7 +2,7 @@ Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
 Version:	3.26.1
-Release:	1
+Release:	2
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications
@@ -23,7 +23,6 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.42.0
-Requires:	libgdict = %{epoch}:%{version}-%{release}
 Provides:	gnome-utils-dict
 Provides:	gnome-utils-dictionary = %{epoch}:%{version}-%{release}
 Obsoletes:	gnome-dict
