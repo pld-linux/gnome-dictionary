@@ -1,20 +1,20 @@
 Summary:	Online dictionary
 Summary(pl.UTF-8):	Słownik online
 Name:		gnome-dictionary
-Version:	3.26.1
-Release:	2
+Version:	40.0
+Release:	1
 Epoch:		1
 License:	GPL v2+
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-dictionary/3.26/%{name}-%{version}.tar.xz
-# Source0-md5:	08be36dd1c6d8d4e23a744737519d546
+Source0:	https://download.gnome.org/sources/gnome-dictionary/40/%{name}-%{version}.tar.xz
+# Source0-md5:	d7fc30c17ef3a6c51e104f8f038caa1b
 URL:		https://wiki.gnome.org/Apps/Dictionary
 BuildRequires:	gettext-tools >= 0.17
 BuildRequires:	glib2-devel >= 1:2.42.0
 BuildRequires:	gobject-introspection-devel >= 1.42.0
 BuildRequires:	gtk+3-devel >= 3.22
 BuildRequires:	gtk-doc >= 1.15
-BuildRequires:	meson >= 0.42.0
+BuildRequires:	meson >= 0.54.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig >= 1:0.22
 BuildRequires:	rpmbuild(find_lang) >= 1.35
@@ -25,8 +25,8 @@ BuildRequires:	yelp-tools
 Requires(post,postun):	glib2 >= 1:2.42.0
 Provides:	gnome-utils-dict
 Provides:	gnome-utils-dictionary = %{epoch}:%{version}-%{release}
-Obsoletes:	gnome-dict
-Obsoletes:	gnome-utils-dict
+Obsoletes:	gnome-dict < 1:2.14
+Obsoletes:	gnome-utils-dict < 1:2.14
 Obsoletes:	gnome-utils-dictionary < 1:3.3.2-1
 # system library dropped since 3.26; if something needs it, re-add as libgdict.spec built from gnome-dictionary 3.24.1
 Obsoletes:	libgdict < 1:3.26
@@ -71,13 +71,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc NEWS README.md
 %attr(755,root,root) %{_bindir}/gnome-dictionary
-%{_datadir}/appdata/org.gnome.Dictionary.appdata.xml
 %{_datadir}/dbus-1/services/org.gnome.Dictionary.service
-%dir %{_datadir}/gdict-1.0
-%dir %{_datadir}/gdict-1.0/sources
-%{_datadir}/gdict-1.0/sources/default.desktop
-%{_datadir}/gdict-1.0/sources/spanish.desktop
-%{_datadir}/gdict-1.0/sources/thai.desktop
+%{_datadir}/gdict-1.0
 %{_datadir}/glib-2.0/schemas/org.gnome.dictionary.gschema.xml
+%{_datadir}/metainfo/org.gnome.Dictionary.appdata.xml
 %{_desktopdir}/org.gnome.Dictionary.desktop
+%{_iconsdir}/hicolor/scalable/apps/org.gnome.Dictionary.svg
+%{_iconsdir}/hicolor/scalable/apps/org.gnome.Dictionary.Devel.svg
+%{_iconsdir}/hicolor/symbolic/apps/org.gnome.Dictionary-symbolic.svg
 %{_mandir}/man1/gnome-dictionary.1*
